@@ -15,7 +15,7 @@ with open(output_file_path, 'w') as file:
             .select([
                 pl.col("reporterCode"),
                 pl.col("partnerCode"),
-                pl.col("cmdCode")
+                pl.col("cmdCode"),
                 pl.col("qtyUnitCode"),
                 pl.col("qty"),
                 pl.col("primaryValue"),
