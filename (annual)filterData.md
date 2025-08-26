@@ -15,10 +15,11 @@ with open(output_file_path, 'w') as file:
             .select([
                 pl.col("reporterCode"),
                 pl.col("partnerCode"),
-                pl.col("cmdCode").cast(pl.Utf8).str.zfill(4),  # Ensure 4-digit strings
+                pl.col("cmdCode")
                 pl.col("qtyUnitCode"),
                 pl.col("qty"),
-                pl.col("primaryValue")
+                pl.col("primaryValue"),
+                pl.col("flowCode")
             ])
         )
         
