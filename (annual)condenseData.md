@@ -7,7 +7,7 @@ output_dir = "/project/bii_nssac/people/anil/DPI"
 os.makedirs(output_dir, exist_ok=True)
 
 # Load data
-file_path = "out/x_edges2000.txt"
+file_path = "out/x_edges{year}.txt"
 df = pl.read_csv(
     file_path,
     separator=" ",  
